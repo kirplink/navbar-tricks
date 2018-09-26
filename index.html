@@ -43,7 +43,8 @@
     </nav>
 
     <div class="container bg-secondary p-3">
-        <P>Notice how it allways spans the entire width of the window that it is in, and how all the links are aligned to the right.</P>
+        <P>Notice how it allways spans the entire width of the window that it is in, and how all the links are aligned
+            to the right.</P>
         <p>what if we want the navbar to be the same width as the content of the page?</p>
         <p>We can accomplish this by giving the navbar the class of "container".</p>
         <h6>An example of this can be seen here:</h6>
@@ -72,16 +73,84 @@
         </div>
     </nav>
 
+    <div class="container bg-secondary p-3">
+        <p>What if we want the Navbar to still stretch the entire page but have the links align with the content of the
+            page?</p>
+        <p>This is what I have done in this next example, see if you can look at the code and tell how it was done.</p>
+        <h6>Full width Navbar with links aligned with page content:</h6>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Why do you think I have added a div with the class of container here? -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-secondary p-3">
+        <p>The last thing I would like to do is to align the navbar links to the right.</p>
+        <p>Take some time to google <a href="https://www.google.com/search?ei=C9KqW5OLFc6UtQXcqYm4Bw&q=how+to+right+align+navbar+links+with+bootstrap&oq=how+to+right+align+navbar+links+with+bootstrap&gs_l=psy-ab.3...11010.14378..14874...0.0..0.71.546.9......0....1..gws-wiz.......0i71j33i10.M2aaXcNgpRg" class="text-light">"how to right align navbar links with bootstrap"</a> and see if you can find the answer.</p>
+        <h6>Here is an example of this being done:</h6>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container bg-secondary p-3 mb-5">
+        <p>There you have a few ways to customize the look of your Bootstrap Navbars.</p>
+        <a href="example.html" class="text-light">Click here to see an example page with all this and more in action!</a>
+    </div>
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
